@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@page {
+  /* size: 21cm 29.7cm; */
+}
+
+html {
+  /* padding: 0 1em; */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: white;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 51em;
+
+  /* overflow: hidden; */
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  min-height: 1055px;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+section {
+  background: #fadadd;
+  color: black;
+  /* padding: 10px 15px 10px 25px; */
+  padding-left: 25px;
+  padding-right: 15px;
+}
+
+div {
+  color: #701c1c;
+  background: #f39998;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titles {
+
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+h1 {
+  line-height: 60px;
+  font-size: 60px;
+  margin: 0;
+  color: #701c1c;
+}
+
+.line {
+  height: 8px;
+  width: 80%;
+  background: #c3272b;
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  padding-top: 70px;
+}
+
+.logo .fa {
+  font-size: 150px;
+}
+
+.intro {
+  padding-top: 20px;
+}
+
+.intro h2 {
+  font-size:25px;
+  margin: 5px 0 10px 0;
+  color: #c3272b;
+}
+
+.intro li {
+  font-weight: bold;
+}
+
+a, a:active {
+  color: #c3272b;
+}
+
+.about, .about-h {
+
+}
+
+.skills {
+
+}
+
+.skills .fa {
+  font-size: 50px;
+  color: #c3272b;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.skills li {
+  text-align: center;
+}
