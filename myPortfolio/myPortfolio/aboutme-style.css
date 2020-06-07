@@ -1,0 +1,42 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #fbceb1;
+  }
+
+
+
+
+  .container {
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+
+  .container> h1 {
+    text-align: center;
+    text-decoration: underline rgb(169, 25, 126);
+  }
+
+  .aboutbaylee {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas: 
+      "text1 img1";
+  }
+
+  .bayleetext {
+      grid-area: text1;
+      margin-right: 15%;
+  }
+
+  .bayleeimg {
+      grid-area: img1;
+      border-radius: 50%;
+  }
+
+ 
+
+  
+
+
+
+  }
