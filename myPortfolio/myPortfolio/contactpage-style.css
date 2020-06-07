@@ -1,0 +1,32 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: #fbceb1;
+  }
+
+
+
+  .contactmepage {
+      background-color: #fbceb1;
+      border: 1px white;
+      border-radius: 10px;
+      margin-left: 15%;
+      margin-right: 10%;
+      color: black;
+      padding-bottom: 5%;
+  }
+
+  .contactmepage > h1 {
+      text-decoration: underline rgb(169, 25, 126);
+      padding-left: 3%;
+      padding-top: 10%;
+  }
+
+  .contactform {
+      max-width: 650px;
+      margin: 2rem auto;
+      border: 2px black;
+      border-style: solid;
+      padding: 2rem;
+      font-weight: bold;
+  }
+
