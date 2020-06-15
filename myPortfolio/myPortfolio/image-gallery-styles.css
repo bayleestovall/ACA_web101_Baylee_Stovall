@@ -1,114 +1,190 @@
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
   
-  /* Create four equal columns that sits next to each other */
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 4px;
+}
+.column{
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:10px; top:0px;}
+  50%  {background-color:blue; left:10px; top:10px;}
+  75%  {background-color:green; left:0px; top:10px;}
+  100% {background-color:red; left:0px; top:0px;}
+  
+}
+.txt {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img1balloons {
+  position: relative;
+  width: 100%;
+}
+.img1balloons:hover .overlay {
+  opacity: .5;
+}
+.img2girl {
+  position: relative;
+  width: 100%;
+}
+.img2girl:hover .overlay {
+  opacity: .5;
+}
+.img3tiger {
+  position: relative;
+  width: 100%;
+}
+.img3tiger:hover .overlay {
+  opacity: .5;
+}
+.img4blm {
+  position: relative;
+  width: 100%;
+}
+.img4blm:hover .overlay {
+  opacity: .5;
+}
+.img5woman {
+  position: relative;
+  width: 100%;
+}
+.img5woman:hover .overlay {
+  opacity: .5;
+}
+.img6trees {
+  position: relative;
+  width: 100%;
+}
+.img6trees:hover .overlay {
+  opacity: .5;
+}
+.img7mask {
+  position: relative;
+  width: 100%;
+}
+.img7mask:hover .overlay {
+  opacity: .5;
+}
+.img8puppy {
+  position: relative;
+  width: 100%;
+}
+.img8puppy:hover .overlay {
+  opacity: .5;
+}
+.img9protest {
+  position: relative;
+  width: 100%;
+}
+.img9protest:hover .overlay {
+  opacity: .5;
+}
+.img10elephant {
+  position: relative;
+  width: 100%;
+}
+.img10elephant:hover .overlay {
+  opacity: .5;
+}
+.img11travel {
+  position: relative;
+  width: 100%;
+}
+.img11travel:hover .overlay {
+  opacity: .5;
+}
+.img12deer {
+  position: relative;
+  width: 100%;
+}
+.img12deer:hover .overlay {
+  opacity: .5;
+}
+.img13storm {
+  position: relative;
+  width: 100%;
+}
+.img13storm:hover .overlay {
+  opacity: .5;
+}
+.img14balloons {
+  position: relative;
+  width: 100%;
+}
+.img14balloons:hover .overlay {
+  opacity: .5;
+}
+.img15girl {
+  position: relative;
+  width: 100%;
+}
+.img15girl:hover .overlay {
+  opacity: .5;
+}
+.img16trees {
+  position: relative;
+  width: 100%;
+}
+.img16trees:hover .overlay {
+  opacity: .5;
+}
+.img17woman {
+  position: relative;
+  width: 100%;
+}
+.img17woman:hover .overlayegg {
+  opacity: .5;
+}
+
+
+@media screen and (max-width: 800px) {
+.column {
+  flex: 46%;
+  max-width: 50%;
+}}
+
+@media screen and (max-width: 600px) {
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0,0,0, .5);
-  }
-
-  .pose:hover .overlay {
-    opacity: .5;
-  }
-
-  .puppy:hover .overlay {
-    opacity: .5;
-  }
- 
-  .balloons:hover .overlay {
-    opacity: .5;
-  } 
-  
-  .trees:hover .overlay {
-    opacity: .5;
-  }
-
-  .mask:hover .overlay {
-    opacity: .5;
-  }
-
-  .tiger:hover .overlay {
-    opacity: .5;
-  }
-
-  .deer:hover .overlay {
-    opacity: .5;
-  }
-
-  .protest:hover .overlay {
-    opacity: .5;
-  }
-
-  .storm:hover .overlay {
-    opacity: .5;
-  }
-
-  .girl:hover .overlay {
-    opacity: .5;
-  }
-
-  .elephant:hover .overlay {
-    opacity: .5;
-  }
-
-  .blm:hover .overlay {
-    opacity: .5;
-  }
-
-  .travel:hover .overlay {
-    opacity: .5;
-  }
-  
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  flex: 50%;
+  max-width: 100%;
+  }}
   
 
   
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+
   
